@@ -1,3 +1,4 @@
+#require 'pry'
 class ConcretesController < ApplicationController
   def new
     @concrete = Concrete.new
@@ -5,6 +6,7 @@ class ConcretesController < ApplicationController
 
   def create
     render nothing: true
+    #binding.pry
   end
 
   def edit
@@ -14,4 +16,5 @@ class ConcretesController < ApplicationController
   def update
     render nothing: true
   end
+
 end
